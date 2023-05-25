@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SlideShow() {
   return (
-      <div
+        <div
         id="default-carousel"
         className="relative w-full h-full"
         data-carousel="slide"
