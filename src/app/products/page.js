@@ -20,7 +20,7 @@ export default async function Products() {
 
   return (
     <div className="flex min-h-screen flex-col items-center p-5">
-      <h1 style={{ fontSize: "30px", color: "blue", fontWeight: "bold",marginTop:"8px"}}>
+      <h1 style={{ fontSize: "30px", color: "blue", fontWeight: "bold"}}>
         Product Management
       </h1>
       <div className="flex min-h-screen flex-wrap items-center justify-evenly">
