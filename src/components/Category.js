@@ -9,7 +9,7 @@ export default function Category({ image, name, id }) {
           <Link href={`/categories/${id}`}>
             <img
               className="p-6 rounded-t-lg h-72 w-full"
-              src={image}
+              src={image ? image : "../images/placeholder.jpg"}
               alt="product image"
             />
           </Link>
