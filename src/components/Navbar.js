@@ -137,3 +137,7 @@ export default function Navbar() {
     </div>
   );
 }
+
+export function addUser(){
+  
+}
