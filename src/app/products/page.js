@@ -10,6 +10,11 @@ export async function fetchProducts() {
   return resp.json();
 }
 
+export const metadata = {
+  title: 'ISTAD - Products',
+  description: 'All The Products list here',
+}
+
 export default async function Products() {
   const products = await fetchProducts();
 

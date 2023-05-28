@@ -9,7 +9,8 @@ export async function fetchCategory(id) {
 export async function generateMetadata({ params }) {
   const category = await fetchCategory(params.id);
   return {
-    
+    title: category.title,
+    description: category.description,
     thumbnail: category.image,
 
     metadataBase: new URL("https://istad.com"),
@@ -22,7 +23,8 @@ export async function generateMetadata({ params }) {
     },
     openGraph: {
       images: category.image,
-  
+      title: category.title,
+      description: category.description,
     },
   };
 }

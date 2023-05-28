@@ -8,8 +8,10 @@ export async function fetchCategories() {
   );
   return resp.json();
 }
-
-
+export const metadata = {
+  title: 'ISTAD - Categories',
+  description: 'All The Categories of ISTAd are here',
+}
 export default async function Categories() {
   const categories = await fetchCategories();
 

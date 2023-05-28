@@ -9,8 +9,8 @@ export async function fetchUser(id) {
 export async function generateMetadata({ params }) {
   const user = await fetchUser(params.id);
   return {
-   
- 
+    title: user.title,
+    description: user.description,
     thumbnail: user.avatar,
 
     metadataBase: new URL("https://istad.com"),
@@ -22,8 +22,9 @@ export async function generateMetadata({ params }) {
       },
     },
     openGraph: {
-      image: user.avatar,
-     
+      images: user.avatar,
+      title: user.title,
+      description: user.description,
     },
   };
 }

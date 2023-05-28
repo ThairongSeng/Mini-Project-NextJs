@@ -6,6 +6,10 @@ export async function fetchUsers() {
     return resp.json();
   }
   
+  export const metadata = {
+    title: 'ISTAD - Users',
+    description: 'All The Users are here',
+  }
 export default async function Users() {
     const users = await fetchUsers();
     return (
