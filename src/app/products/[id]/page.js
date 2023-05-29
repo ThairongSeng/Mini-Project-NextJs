@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   return {
     title: product.title,
     description: product.description,
-    thumbnail: product.image[0],
+    thumbnail: product.images[0],
 
     metadataBase: new URL("https://istad.com"),
     alternates: {
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
       },
     },
     openGraph: {
-      images: product.image[0],
+      images: product.images[0],
       title: product.title,
       description: product.description,
     },

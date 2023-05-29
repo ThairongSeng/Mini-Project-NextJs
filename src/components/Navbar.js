@@ -11,12 +11,12 @@ export default function Navbar() {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="https://flowbite.com/" className="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
+              src="https://p1crires.cri.cn/01dcri/images/zhycms_chinaplus/20180527/c5b1e251-bcd6-4a21-b711-05dcd0819f61.jpg?x-oss-process=image/resize,w_650"
               className="h-8 mr-3"
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
+              ISTAD Product
             </span>
           </Link>
           <div className="flex md:order-2">
